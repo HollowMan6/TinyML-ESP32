@@ -49,8 +49,7 @@ The Programs uses 115200 baud to send Serial data.
 
 # Content 目录
 
-[Project I : Gesture Recognition 姿态识别](P1%20Gesture%20Recognition)
-
+[Project I : Gesture Recognition 姿态识别](https://www.bilibili.com/video/BV1Xg4y1q7EF)
 * [Get Gyroscope Data 获取陀螺仪数据](P1%20Gesture%20Recognition/get_gyroscope_data/get_gyroscope_data.ino)
   * 将陀螺仪的数据通过串口发送
   * The data of gyroscope is sent through serial port
