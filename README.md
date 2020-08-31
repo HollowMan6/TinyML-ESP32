@@ -15,6 +15,8 @@ This is the TinyML programs for ESP32 according to BlackWalnut Labs Tutorials. h
 
 Thank BlackWalnut Labs for providing the ESP32-WROOM-32 Development Board. It contains a mirophone, WS2812 LED light, GY-25Z Gyroscope and a button from top to bottom.
 
+On the basis of the instructions in the BlackWalnut Lab tutorial, I changed part of the program code to adapt to the latest situation.
+
 The program runs on arduino with the following library installed: 
 
 * https://github.com/espressif/arduino-esp32
@@ -29,7 +31,9 @@ The Programs uses 115200 baud to send Serial data.
 
 此仓库是黑胡桃实验室的TinyML教程中的程序集合 https://blackwalnut.zucc.edu.cn/codelabs/TinyML
 
-感谢BlackWalnut实验室提供的ESP32-WROOM-32开发板。它从上到下包括一个麦克风，WS2812 LED灯，GY-25Z陀螺仪和一个按钮。
+感谢黑胡桃实验室提供的ESP32-WROOM-32开发板。它从上到下包括一个麦克风，WS2812 LED灯，GY-25Z陀螺仪和一个按钮。
+
+程序在黑胡桃实验室教程中所述说明的基础上，改动了部分代码以适应最新情况。
 
 程序可以在安装了以下库的arduino上运行：
 
@@ -38,6 +42,10 @@ The Programs uses 115200 baud to send Serial data.
 * https://github.com/adafruit/Adafruit_NeoPixel
 
 * https://github.com/tanakamasayuki/Arduino_TensorFlowLite_ESP32
+
+* https://github.com/Links2004/arduinoWebSockets
+
+* https://github.com/bblanchon/ArduinoJson
 
 程序使用115200波特发送串行数据。
 
