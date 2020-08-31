@@ -13,7 +13,7 @@
 
 This is the TinyML programs for ESP32 according to BlackWalnut Labs Tutorials. https://blackwalnut.zucc.edu.cn/codelabs/TinyML
 
-Thank BlackWalnut Labs for providing the ESP32-WROOM-32 Development Board. It contains a mirophone, WS2812 LED light, GY-25Z Gyroscope and a button from top to bottom.
+Thank BlackWalnut Labs for providing the ESP32-WROOM-32 Development Board. It contains a mirophone (Inter-IC Sound), WS2812 LED light, GY-25Z Gyroscope and a button from top to bottom.
 
 On the basis of the instructions in the BlackWalnut Lab tutorial, I changed part of the program code to adapt to the latest situation.
 
@@ -29,13 +29,15 @@ The program runs on arduino with the following library installed:
 
 * https://github.com/bblanchon/ArduinoJson
 
+* https://github.com/kosme/arduinoFFT
+
 The Programs uses 115200 baud to send Serial data.
 
 # TinyML ESP32
 
 此仓库是黑胡桃实验室的TinyML教程中的程序集合 https://blackwalnut.zucc.edu.cn/codelabs/TinyML
 
-感谢黑胡桃实验室提供的ESP32-WROOM-32开发板。它从上到下包括一个麦克风，WS2812 LED灯，GY-25Z陀螺仪和一个按钮。
+感谢黑胡桃实验室提供的ESP32-WROOM-32开发板。它从上到下包括一个麦克风(Inter-IC Sound)，WS2812 LED灯，GY-25Z陀螺仪和一个按钮。
 
 程序在黑胡桃实验室教程中所述说明的基础上，改动了部分代码以适应最新情况。
 
@@ -50,6 +52,8 @@ The Programs uses 115200 baud to send Serial data.
 * https://github.com/Links2004/arduinoWebSockets
 
 * https://github.com/bblanchon/ArduinoJson
+
+* https://github.com/kosme/arduinoFFT
 
 程序使用115200波特发送串行数据。
 
@@ -83,3 +87,29 @@ The Programs uses 115200 baud to send Serial data.
 * [Visualize Predict Gesture 可视化预测手势](P1%20Gesture%20Recognition/visualize_predict_gesture/visualize_predict_gesture.ino)
   * 预测手势，将2种手势可能性通过网页客户端进行显示
   * Predict the gesture and show the two gesture possibilities through web pages.
+
+[Project II : Open LED using Voice 热词唤醒](https://www.bilibili.com/video/BV1Uk4y1m7uy)
+* [Audio Data Acquisition 获取声音数据](P2%20Open%20LED%20using%20Voice/audio_data_acquisition/audio_data_acquisition.ino)
+  * 将麦克风的数据通过串口发送
+  * The data of microphone is sent through serial port
+* [Record 2s Audio Data 获取2秒声音数据](P2%20Open%20LED%20using%20Voice/Get%20Recording/record_2s_audio_data/record_2s_audio_data.ino)
+  * 开启时将麦克风的2秒录音数据通过串口发送
+  * When it is turned on, the 2 second recording data of the microphone is sent through the serial port
+* [Record Audio Data 录音获取声音数据](P2%20Open%20LED%20using%20Voice/Get%20Recording/record_audio_data/record_audio_data.ino)
+  * 开启时将麦克风的录音数据显示在网页界面
+  * When on, recording data of microphone will be displayed on the web page
+* [Get audio and visualize waveform 获取音频，可视化波形](P2%20Open%20LED%20using%20Voice/Get%20Recording/recorder.ipynb)
+  * 使用Jupyter Notebook获取音频并可视化波形
+  * Use Jupyter Notebook to get audio and visualize waveform
+* [FFT Visualize Realtime FFT可视化数据](P2%20Open%20LED%20using%20Voice/FFT_visualize_realtime/FFT_visualize_realtime.ino)
+  * 将实时频域数据显示在网页界面
+  * Display real-time frequency domain data in web pages
+* [Get Training Data 获取训练数据](P2%20Open%20LED%20using%20Voice/get_training_data/get_training_data.ino)
+  * 收集同一语音的100次重复操作，达到100次时亮绿灯，超过亮蓝灯，并将csv格式的数据内容通过串口发送
+  * Collect 100 repeated operations of the same voice, and when it reaches 100 times, the green light will be on. The blue light will be on when the operations exceed 100 times, and the data in the format of CSV will be sent through the serial port
+* [Train Voice Model 训练语音模型](P2%20Open%20LED%20using%20Voice/Train%20Voice%20Model/app.ipynb)
+  * 使用Jupyter Notebook训练模型
+  * Using jupyter notebook to train model
+* [Open LED using Voice 热词唤醒](P2%20Open%20LED%20using%20Voice/open_led_using_voice/open_led_using_voice.ino)
+  * 预测语音，根据语音指示开关LED灯
+  * Predict voice, switch LED light according to voice content
