@@ -25,6 +25,10 @@ The program runs on arduino with the following library installed:
 
 * https://github.com/tanakamasayuki/Arduino_TensorFlowLite_ESP32
 
+* https://github.com/Links2004/arduinoWebSockets
+
+* https://github.com/bblanchon/ArduinoJson
+
 The Programs uses 115200 baud to send Serial data.
 
 # TinyML ESP32
@@ -76,3 +80,6 @@ The Programs uses 115200 baud to send Serial data.
 * [Predict Gesture 预测手势](P1%20Gesture%20Recognition/predict_gesture/predict_gesture.ino)
   * 预测手势，将2种手势可能性通过串口发送
   * Predict the gesture and send the two gesture possibilities through the serial port
+* [Visualize Predict Gesture 可视化预测手势](P1%20Gesture%20Recognition/predict_gesture/visualize_predict_gesture.ino)
+  * 预测手势，将2种手势可能性通过网页客户端进行显示
+  * Predict the gesture and show the two gesture possibilities through web pages.
