@@ -113,3 +113,20 @@ The Programs uses 115200 baud to send Serial data.
 * [Open LED using Voice 热词唤醒](P2%20Open%20LED%20using%20Voice/open_led_using_voice/open_led_using_voice.ino)
   * 预测语音，根据语音指示开关LED灯
   * Predict voice, switch LED light according to voice content
+
+[Project III : Count rope jumping 跳绳计数器](https://blackwalnut.zucc.edu.cn/codelabs/detail?id=5fc1421a714e390022c55345)
+* [Get UART Data 获取UART数据](P3%20Count%20rope%20jumping/get_UART_data/get_UART_data.ino)
+  * 将六轴姿态传感器的数据通过串口发送
+  * The data of UART is sent through serial port
+* [Get Training Data 获取训练数据](P3%20Count%20rope%20jumping/get_training_data/get_training_data.ino)
+  * 收集同一跳绳动作的100次重复操作，工作时亮红灯，达到100次时亮绿灯，并将csv格式的数据内容通过串口发送。同理收集100次其它任意动作的信息。
+  * Collect 100 repeated data of jumping actions, red light will be on when working, and when it reaches 100 times, the green light will be on. The data in the format of CSV will be sent through the serial port. Same as above, collect data of 100 ramdom actions.
+* [Train Model 训练模型](P3%20Count%20rope%20jumping/Train%20Model/Train.ipynb)
+  * 使用Jupyter Notebook训练模型
+  * Using jupyter notebook to train model
+* [Predict Jumping 预测手势](P3%20Count%20rope%20jumping/use_model_to_predict/use_model_to_predict.ino)
+  * 预测手势，将跳绳的可能性通过串口发送
+  * Predict the jumping and send the possibility through the serial port
+* [Count rope jumping 跳绳计数器](P3%20Count%20rope%20jumping/showing_jump_times/showing_jump_times.ino)
+  * 预测跳绳动作手势，将2次数通过网页客户端进行显示
+  * Predict the rope-jumping action and show the count times through web pages.
